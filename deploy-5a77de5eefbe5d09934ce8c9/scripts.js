@@ -1,0 +1,259 @@
+/*
+Dictionary of Lesson 1 words. ("key1":"value1", "key2":"value2")
+Access each value through using the key:
+lesson1_dict["key2"] --> "value2"
+**Must name the new dictionary: lessonx_dict**
+
+When adding other lessons, make sure it randomly takes key,value pairs from pervious lessons
+and uses them in later boards. But first ask the user if they only want the lesson they click on
+or if they want to include other previous lessons.
+*/
+
+var lesson1_dict = {"crines":"Hair", "speculum":"Mirror", "neglegenter":"Carelessly", "vexatus":"Annoyed", "in quibus":"Among Whom", "pectere":"To Comb", "vendere":"To Sell", "porcus":"Pig", "cuius":"Whose", "glis":"Dormouse",
+"sella":"Sedan Chair", "summa celeritate":"With the Greatest Speed", "concursare":"To Run About", "portatur":"Is Being Carried", "delectare":"To Delight", "recumbere":"To Recline", "aufugere":"To Run Away", "mendicus":"Beggar", "elegantissimus":"Most Elegant", "adstantes":"Bystanders",
+ "rixa":"Quarrel", "finis":"End", "libertus":"Freedman", "fumus":"Smoke"};
+
+var lesson2_dict = {"insula":"Island", "vis":"Force", "ac":"And", "incendium":"Fire", "incola":"Tenant", "infirmus":"Weak", "eicere":"To Throw Out", "quaerere":"To Seek", "opprimere":"To Overwhelm",
+"fenestra":"Window", "ornamenta":"Furnishings", "tam":"So", "parvus":"Small", "tabulatum":"Floor", "paene":"Almost", "commovere":"To Move", "dubium":"Doubt", "servare":"To Save", "paries":"House Wall", "cachinnus":"Laughter",
+ "optimus":"Best", "lanius":"Butcher", "caro":"Meat", "Quanti...?":"How Much...?", "perna":"Ham", "pretium":"Price", "minuere":"To Reduce", "quidem":"Indeed", "umquam":"Ever", "procax":"Pushy", "autem":"However",
+  "multus":"Many", "pinguis":"Fat", "denarius":"Silver Coin", "immo":"Rather", "lepus":"Hare", "pascere":"To Feed", "addere":"To Add", "accipere":"To Accept", "gratis":"Free", "recte":"Rightly", "vero":"Truly" };
+
+var lesson3_dict = {"invitare":"To Invite", "qua de causa":"For This Reason", "comparare":"To Buy", "holus":"Vegetable", "panis":"Bread", "pullus":"Chicken", "ovum":"Egg", "malum":"Apple", "circum":"Around", "pulcherrimus":"Most Beautiful",
+"coquere":"To Cook", "afferre":"To Bring To", "evertere":"To Overturn", "deicere":"To Throw Down", "effundere":"To Pour Out", "regnum":"Kigndom", "inferi":"The Underworld", "candelabrum":"Candelabrum", "casu":"By Chance", "oleum":"Oil", "stratum":"Covering",
+ "ignis":"Fire", "pallium":"Cloak", "iussa":"Commands", "Bono animo es!":"Cheer up!", "complures":"Several", "comiter":"Courteously", "solea":"Sandal", "auferre":"To Carry Away", "accumbere":"To Recline (Dining)", "mulsum":"Honey Wine", "ferculum":"Dish",
+"gustatio":"First Course", "niger":"Black", "boletus":"Mushroom", "liquamen":"Garum", "edere":"To Eat", "complere":"To Fill", "irrumpere":"To Burst In", "aspersus":"Sprinkled", "pestilentia":"Plague", "poculum":"Goblet", "locus":"Place",
+ "popina":"Eating House", "frustum":"Scrap", "una":"Together", "ceteri":"The Others", "Euge!":"Hurray!", "scindere":"To Cut", "coquus":"Cook", "secundae mensae":"Second Course", "uva":"Grape", "pirum":"Pear", "passum":"Rasin Wine" };
+
+var lesson4_dict = {"plus vini":"More Wine", "et...et":"Both...And", "creare":"To Appoint", "prudenter":"Sensibly", "quam":"Than", "nimis":"Too Much", "poscere":"To Demand", "miscere":"To Mix", "sinere":"To Allow", "haurire":"To Drain",
+ "modus":"Method", "cura":"Care", "invocare":"To Invoke", "collapsus est":"He Collapsed", "pessimus":"Worst", "collis":"Hill", "deus":"God", "vulnus":"Wound", "ligare":"To Bind Up", "credere":"To Believe", "securus":"Carefree",
+"fustis":"Club", "timor":"Fear", "affectus":"Affected", "percutere": "To Strike", "corripere":"To Grab", "adimere":"To Take Away", "celerius":"More Quickly", "facile":"Easily", "facile":"Easily", "consecuti sunt":"They Overtook", "fortissime":"Most Bravely",
+ "tergum":"Rear", "pronus":"Face Down", "summus":"Greatest", "gravis":"Heavy" };
+
+var lesson5_dict = {"que":"And", "huc":"Here", "pridie":"On The Day Before", "adulescens":"Young Man", "moratus est":"He Remained", "proficisci":"To Set Out", "libenter":"Gladly", "rursus":"Again", "sane":"Certainly",
+ "homo":"Man", "secuti sunt":"They Followed", "conatus est":"He Tried", "quo celerius...eo celerius":"The Faster...The Faster", "tristis":"Sad", "sis":"If You Wish", "persuadere":"To Persuade", "cotidie":"Daily", "ludus":"School", "veror":"I Fear", "castigare":"To Reprimand",
+"grammaticus":"Secondary School Teacher", "experitur":"He Tests", "praeferre":"To Carry In Front Of", "loqueris":"You Are Talking", "vel":"Or", "paedagogus":"Teacher", "eruditus":"Learned", "utilis":"Useful", "pistrinum":"Bakery", "etiamsi":"Even If", "ad tempus":"On Time",
+ "scriblita":"Cheese Pastry", "paulum":"A Small Amount", "ientaculum":"Breakfast", "loquuntur":"They Talk" };
+
+var lesson6_dict = {"coepit":"He Began", "mensis":"Month", "discipulus":"Pupil", "annus":"Year", "ruina":"Ruin", "obsidere":"To Besiege", "incendere":"To Burn", "pati":"To Suffer", "delere":"To Destroy", "navigare":"To Sail",
+ "terra":"Earth", "mare":"Sea", "tempestas":"Storm", "navis":"Ship", "regina":"Queen", "aliqui":"Some", "verbum":"Word", "idem":"The Same As", "sic":"Thus", "comes":"Companion", "antequam":"Before",
+ "conticescere":"To Become Silent", "animadvertere":"To Notice", "expergisci":"To Wake Up", "nusquam":"Nowhere", "di":"Gods", "monere":"To Warn", "dormitare":"To Be Sleepy", "interest":"It Is Important", "ferula":"Cane", "parere":"To Obey", "extendere":"To Hold Out" };
+
+var lesson7_dict = {"Ave!":"Hello!", "valere":"To Be Strong", "primo":"At First", "natare":"To Swim", "scapha":"Small Boat", "inde":"Then", "desilire":"To Leap Down", "audere":"To Dare", "repellere":"To Drive Off", "iracundia":"Bad Temper",
+"neque...neque":"Neither...Nor", "cum":"Since", "immo vero":"On The Contrary", "ignorare":"To Ignore", "discere":"To Learn", "cupere":"To Want", "rapere":"To Seize", "arcessere":"To Summon", "crudelis":"Cruel", "cum primum":"As Soon As", "poena":"Punishment",
+"obsecrare":"To Beseech", "quam primum":"As Soon As Possible", "tela":"Fabric", "studium":"Enthusiasm", "foras":"Outside", "discessisse":"To Have Departed", "texere":"To Weave", "dicitur":"He Is Said", "Quantum...!":"How Much...!", "talia":"Such Things" };
+
+var lesson8_dict = {"ventus":"Wind", "unda":"Wave", "magister":"Captain", "Pro di immortales!":"Good Heavens!", "dives":"Rich", "coorior":"To Rise Up", "evadere":"To Escape", "adoriri":"To Attack", "resistere":"To Resist", "superare":"To Overcome",
+"pauper":"Poor", "casa":"Hut", "convalescere":"To Get Well", "pugio":"Dagger", "clam":"Secretly", "quoniam":"Since", "Campius Martius":"The Plain Of Mars", "quo":"There", "Quo...cum":"When...there", "vestibulum":"Vestibule", "exercere":"To Train",
+"calor":"Heat", "haud":"Not", "contra":"Against", "unguere":"To Annoint", "defricare":"To Rub Down", "tergere":"To Dry", "cognoscere":"To Find Out", "senex":"Old Man", "calvus":"Bald", "indutus":"Clothed", "capillatus":"Long Haired",
+"follis":"Bag", "digitus":"Finger", "repetere":"To Pick Up", "concrepare":"To Snap", "thermae":"Baths" };
+
+var lesson9_dict = {"exeamus":"Let Us Go Out", "fur":"Thief", "me custode":"While I Am On Guard", "sella":"Seat", "surripere":"To Steal", "prehendere":"To Seize", "exsilire":"To Leap Out", "confugere":"To Flee For Refuge", "pavimentum":"Tiled Floor", "subsequi":"To Follow",
+"labi":"To Slip", "virgo":"Maiden", "rixari":"To Quarrel", "utterque":"Both", "rima":"Crack", "osculum":"Kiss", "consilium":"Plan", "consilium capere":"To Adopt A Plan", "inscius":"Unknowing", "vultus":"Face", "velamen":"Veil",
+"spelunca":"Cave", "sentire":"To Feel", "exprimere":"To Express", "valedicere":"To Say Goodbye", "aspergere":"To Sprinkle", "progredi":"To Go Forward", "nec":"And...Not", "prior":"Previous", "moritura":"About To Die", "occidere":"To Kill", "perdere":"To Destroy" };
+
+var lesson10_dict = {"putare":"To Think", "ludus":"Game", "fere":"Approximately", "postremo":"Finally", "ambo":"Both", "pupa":"Doll", "Num...?":"Surely...Not?", "donum":"Gift", "dies natalis":"Birthday", "perisylium":"Peristyle",
+"abripere":"To Snatch Away", "laedere":"To Harm", "negotiosus":"Busy", "pro certo habere":"To Be Sure", "munera":"Games", "sperare":"To Belive", "constat":"It Is Agreed", "continere":"To Hold", "malle":"To Prefer", "epigramma":"Epigram", "imperator":"Emperor",
+"quo maior... eo plus...":"The Greater... The More...", "mature":"Early", "ludus latrunculorum":"Game Of Bandits" };
+
+var lesson11_dict = {"tesserae":"Tickets", "apparitores":"Gatekeepers", "pulvinar":"Imperial Throne", "meridiani":"Midday Fighters", "tot":"So Many", "deliciae":"Delight", "admiratio":"Amazement", "contra":"In Front Of", "ostendere":"To Show", "conicere":"To Throw",
+ "convertere":"To Turn", "tollere":"To Lift", "consistere":"To Halt", "arena":"Sand", "furor":"Frenzy", "acriter":"Fiercely", "pugnabatur":"The Fighting Went On", "nobis reduendum est":"We Must Return", "alias":"At Another Time", "quasi":"As If", "admirari":"To Wonder",
+  "placide":"Gently", "lambere":"To Lick", "parcere":"To Spare", "cogere":"To Force", "clementer":"In A Kindly Manner", "blande":"In A Coaxing Manner", "exanimatus":"Paralyzed", "mutuus":"Mutual", "crudelitas":"Cruelty", "dolere":"To Be Sad", "claudus":"Lame",
+  "latere":"To Lie In Hiding", "mitis":"Gentle", "vesci":"To Feed On", "mansuetus":"Tame", "stirps":"Thorn", "consensus":"Agreement" };
+
+var lesson12_dict = {"sol":"Sun", "serenus":"Bright", "avis":"Bird", "observare":"To Pay Attention To", "adeo":"To Such An Extent", "deditus":"Devoted", "nuper":"Recently", "lucet":"It Is Light", "taedet":"It Bores Me Of", "neglegere":"To Neglect",
+"Heus!":"Hey There!", "oportet":"It Is Right", "id quod":"That Which", "curae esse":"To Be A Cause Of Anxiety", "gens":"Family", "epulae":"Feast", "similis":"Similar", "iuvenis":"Young Man", "submissus":"Subdued", "despondere":"To Betroth", "decet":"It Is Proper",
+"consecrare":"To Make Sacred", "Tabularium":"Town Record Hall", "bulla":"Golden Amulet of Virility", "tabula":"Tablet", "purus":"Clean", "sumere":"To Assume", "limen":"Threshold", "si quis":"If Anyone", "nonulli":"Some", "praecipere":"To Order", "dimittere":"To Send Away",
+ "orare":"To Beg", "imperare":"To Order", "Lares":"Household Gods", "familiaris":"Belonging To The Family", "comitari":"To Accompany", "amplecti":"To Embrace", "gratias agere":"To Thank", "erga":"Toward", "benevolentia":"Kindness" };
+
+var lesson13_dict = {"mos":"Custom", "posterus":"Next", "placuit":"It Was Decided", "ne quis":"That No One", "enuntiare":"To Reveal", "patres":"Senators", "eo magis":"All The More", "agere":"To Discuss", "proferre":"To Carry Forward", "urgere":"To Insist",
+"utrum...an":"Whether...Or", "trepidans":"In A Panic", "caterva":"Crowd", "potius quam":"Rather Than", "fides":"Trust", "ingenium":"Intelligence", "consultum":"Decree", "cognomen":"Surname", "praebere":"To Display", "vitta":"Ribbon", "myrtus":"Myrtle",
+ "laurus":"Laurel", "ornare":"To Decorate", "ara":"Altar", "sacra":"Religious Rites", "rite":"Properly", "auspex":"Augur", "iungere":"To Join", "ardere":"To Burn", "exta":"Organs of Sacrificial Animals", "dextra":"Right Hand", "hilaritas":"Good Humor",
+"nova nupta":"Bride", "ne laberetur":"So That She Wouldn't Stumble" };
+
+var lesson14_dict = {"pompa":"Procession", "candela":"Candel", "nenia":"Dirge", "mimus":"Mime", "lictor":"Magistrate Attendant", "fasc":"Rods", "laudatio":"Eulogy", "rogus":"Funeral Pyre", "manes":"Ghosts Of The Dead", "hortari":"To Encourage",
+ "levis":"Smooth", "coxa":"Hipbone", "febris":"Fever", "morbus":"Illness", "funebris":"Funeral", "frangere":"To Break", "ingravescere":"To Grow Worse", "scindere":"To Tear", "solvere":"To Loosen", "tibicen":"Piper", "imago":"Likeness",
+  "maiores":"Ancestors", "familiares":"Members Of The Household", "plorare":"To Lament", "commemorare":"To Mention", "merita conferre":"To Render Services", "hilaris":"Cheerful", "exstruere":"To Build", "accendere":"To Set On Fire" };
+
+
+
+//Makes an array of the 'keys' from the dictionary
+var currentDict = {};
+var keyList = [];
+var masterWord = "";
+
+//*****Remember to make a new function that does a similar thing, but for an english board*****
+//Makes a function to assign a new latin word from the list
+function assignNew(){
+    //Runs if the latinWord variable isn't equal to ""
+    if(masterWord.length != 0){
+      /*
+      Remove the current latin word from the keyList array
+      I do this so that when you get a new latin word, it will never repeat
+      */
+      keyList.splice(keyList.indexOf(masterWord), 1);
+    }
+    //gets a random number between 0 and 1 less than the keyList array
+    var num =  Math.floor(Math.random() * (keyList.length));
+    //asigns new random latin word from the existing array
+    masterWord = keyList[num];
+    document.getElementById("masterWord").innerHTML = currentDict[masterWord];
+    console.log("latinWord: "+masterWord);
+    console.log("num: "+num);
+    console.log(keyList);
+}
+
+//makes a random table based upon the lesson number given
+function makeTable(lessonNum){
+  currentDict = eval("lesson" + lessonNum +  "_dict");
+  keyList = Object.keys(currentDict);
+  assignNew(); //Calls the assignNew function to create a list of latin words
+  var keys = Object.keys(currentDict);
+
+  //Using the list of words, chooses a random word, puts it
+  //in the table linearly, and removes the latinWord from the list
+  for(var r=0; r<5; r++){
+      for(var c=0; c<5; c++){
+          if(r != 2 || c != 2){
+            var num =  Math.floor(Math.random() * (keys.length));
+            var randomLatin = keys[num];
+            var cell = myTable.rows[r].cells[c];
+            cell.innerHTML = randomLatin;
+            cell.addEventListener("click",clicked);
+            keys.splice(keys.indexOf(randomLatin), 1);
+          }
+      }
+  }
+}
+
+//Checks if any element in the table is clicked
+//If the word is correct, change the color of the cell
+//and check for bingus
+//------------------------------------------------------------------
+//clicked_count counts the ammt. of correct clicks the user has
+//this is used to determine whether or not the user got Blackout Bingus or not
+var clicked_count = 0;
+//wrong_counter counts how many wrong answers the user got
+//can display this later at will
+var wrong_counter = 0;
+function clicked(){
+  var testWord = this.innerHTML;
+  if(testWord == masterWord){
+    this.classList.add('found');
+    assignNew();
+    checkBingus();
+    clicked_count++;
+    if (clicked_count == 24){
+      console.log("BLACKOUT BINGUS")
+      document.getElementById("masterWord").innerHTML = "BLACKOUT BINGUS!"; //This changes the innerHTML of the display word at the top
+      //if (document.getElementById("masterWord").innerHTML == null) {
+        //document.getElementById("masterWord").innterHTML = "You Lose!"
+      alert("BLACKOUT!");
+      return true;
+    }
+  }
+  else {
+    //Does not account for a square that is already clicked
+    wrong_counter++;
+    console.log(wrong_counter)
+    alert("Minime!");
+  }
+}
+
+//Checks if any of those functions evaluate to true,
+//if they are, console log that you win!
+//I can modify what this function returns if I want
+function checkBingus(){
+  if(checkRows() || checkCols() || checkDiags() || checkCorners()){
+    console.log("you win");
+    document.getElementById("caesar").style.display = "block";
+    //Ask user if they wanna continue playing for blackout/corner bingus
+    //Can add some functionality to ask the user if they wanna start
+    //a new game. If they do, reload the page. (Maybe create a cookie counting # of wins?)
+  }
+}
+
+function checkRows(){
+    for(var r=0; r<5; r++){
+      var row = document.getElementById("myTable").rows[r];
+      var founds = 0;
+      for(var c=0; c<5; c++){
+        if(row.cells[c].classList.contains("found")){
+          founds++;
+        }
+      }
+      if(founds == 5){
+        console.log("ROW BINGUS: "+r);
+        return true;
+      }
+    }
+}
+
+function checkCols(){
+    for(var c=0; c<5; c++){
+      var founds = 0;
+      for(var r=0; r<5; r++){
+        var row = document.getElementById("myTable").rows[r];
+        if(row.cells[c].classList.contains("found")){
+          founds++;
+        }
+      }
+      if(founds == 5){
+        console.log("COL BINGUS: "+c);
+        return true;
+      }
+    }
+}
+
+function checkDiags(){
+  var founds = 0;
+  var table = document.getElementById("myTable");
+  for(var i=0; i<5; i++){
+    var cell = table.rows[i].cells[i];
+    if(cell.classList.contains("found")){
+      founds++;
+    }
+  }
+  if(founds == 5){
+    console.log("DIAG BINGUS");
+    return true;
+  }
+  founds = 0;
+  for(var i=0; i<5; i++){
+    var cell = table.rows[i].cells[4 - i];
+    if(cell.classList.contains("found")){
+      founds++;
+    }
+  }
+  if(founds == 5){
+    console.log("DIAG BINGUS");
+    return true;
+  }
+}
+
+function checkCorners(){
+  var founds = 0;
+  var table = document.getElementById("myTable");
+
+  var top_left = table.rows[0].cells[0];
+  var top_right = table.rows[0].cells[4];
+  var bottom_left = table.rows[4].cells[0];
+  var bottom_right = table.rows[4].cells[4];
+
+  if (top_left.classList.contains("found")){
+    founds++;
+  }
+  if (top_right.classList.contains("found")){
+    founds++;
+  }
+  if (bottom_left.classList.contains("found")){
+    founds++;
+  }
+  if (bottom_right.classList.contains("found")){
+    founds++;
+  }
+
+  if(founds == 4){
+    console.log("FOUR CORNER BINGUS");
+    return true;
+  }
+}

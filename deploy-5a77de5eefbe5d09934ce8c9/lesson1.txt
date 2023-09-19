@@ -1,0 +1,24 @@
+porcus,pig
+glis,doormouse
+sella,sedan chair
+vexatus,annoyed
+neglegens,careless
+crinis,hair
+speculum,mirror
+pectere,to comb
+concursare,to run back and forth
+delectare,to delight
+recumbere,to recline
+aufugere,to run away
+adstans,bystander
+rixa,quarrel
+libertus,freedman
+fumus,smoke
+mendicus,beggar
+vi,force
+ac,and
+incendium,fire
+eicio,to throw out
+quaero,to ask
+opprimo,to overwhelm
+fenestra,window

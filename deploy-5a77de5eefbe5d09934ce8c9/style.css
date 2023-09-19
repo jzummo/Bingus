@@ -1,0 +1,79 @@
+div.container {
+    width: 100%;
+    border: 3px solid gray;
+}
+
+body {
+    background-image: url("threepillarsofzummo.jpg");
+    background-color: #cccccc;
+}
+
+header {
+    padding: 1em;
+    color: white;
+    background-color: Gray;
+    clear: left;
+    text-align: center;
+    margin: -11px;
+}
+footer {
+ padding: 1em;
+    color: white;
+    background-color: Gray;
+    clear: left;
+    text-align: center;
+    margin: -16px;
+    }
+
+nav {
+    float: left;
+	background-color: Maroon;
+    max-width: 115px;
+    padding: 2em;
+    margin: -11px;
+    height:485px;
+    border: 3px solid yellow
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+	background-color:
+	;
+}
+
+article {
+    margin-left: 100px;
+    border-left:3px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+td{
+	width: 100px;
+	text-align: center;
+}
+tr{
+	height: 100px;
+}
+td:hover, a:hover {
+	cursor: pointer;
+}
+.found{
+	background-color: yellow;
+}
+
+#middleLogo {
+  background-color: white;
+}
+
+#caesar {
+  position: absolute;
+  width: 40%;
+  height: 70%;
+  margin-top: 3px;
+  left: 1400px;
+}
