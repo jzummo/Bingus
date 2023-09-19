@@ -1,2 +1,2 @@
 # Bingus
-Bringing a classic game into the ancient world. I made this site back in 2016.
+Bringing a classic game into the Roman world. I made this site back in 2016.
